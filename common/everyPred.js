@@ -1,1 +1,1 @@
-export default (...funcs) => (arg) => funcs.every(func => func(arg));
+export default (...funcs) => arg => funcs.every(func => func(arg));

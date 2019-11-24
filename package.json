@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "start": "node --experimental-modules index.js",
-    "lint": "node_modules/eslint/bin/eslint.js ."
+    "lint": "node_modules/eslint/bin/eslint.js .",
+    "test": "node --experimental-modules tests/index.js"
   },
   "engines": {
     "node": "12.13.1"

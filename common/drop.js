@@ -1,1 +1,1 @@
-export default () => { };
+export default (num, seq) => seq.slice(num);

@@ -1,0 +1,27 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "functional"
+  ],
+  "extends": [
+    "plugin:functional/recommended"
+  ],
+  "overrides": [
+    {
+      "files": ["tests/**/*.js"],
+      "rules": {
+        "functional/no-try-statement": "off",
+        "functional/no-expression-statement": "off"
+      }
+    },
+    {
+      "files": ["*"],
+      "rules": {
+        "functional/functional-parameters": "off"
+      }
+    }
+  ]
+}

@@ -1,7 +1,14 @@
 {
   "type": "module",
   "scripts": {
-    "start": "node --experimental-modules index.js"
+    "start": "node --experimental-modules index.js",
+    "lint": "node_modules/eslint/bin/eslint.js ."
   },
-  "engines" : { "node" : "12.13.1" }
+  "engines": {
+    "node": "12.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.0",
+    "eslint-plugin-functional": "^1.0.0"
+  }
 }

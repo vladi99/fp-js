@@ -1,5 +1,1 @@
-function interleave() {
-
-}
-
-module.exports = interleave;
+export default () => {};

@@ -1,5 +1,1 @@
-function drop() {
-
-}
-
-module.exports = drop;
+export default () => { };

@@ -1,5 +1,1 @@
-function double(num) {
-  return num * 2;
-}
-
-module.exports = double;
+export default num => num * 2;

@@ -1,5 +1,1 @@
-function sub() {
-  return [...arguments].reduce((acc, el) => acc - el);
-}
-
-module.exports = sub;
+export default (...nums) => nums.reduce((acc, el) => acc - el);

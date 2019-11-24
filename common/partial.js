@@ -1,5 +1,1 @@
-function partial(func, ...args) {
-  return func.bind(null, ...args)
-}
-
-module.exports = partial;
+export default (func, ...args) => func.bind(null, ...args);

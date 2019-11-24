@@ -1,5 +1,1 @@
-function prewalk() {
-
-}
-
-module.exports = prewalk;
+export default () => {};

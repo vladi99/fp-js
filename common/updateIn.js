@@ -1,5 +1,1 @@
-function updateIn() {
-
-}
-
-module.exports = updateIn;
+export default () => {};

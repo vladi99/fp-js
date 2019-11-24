@@ -1,5 +1,1 @@
-function frequencies() {
-
-}
-
-module.exports = frequencies;
+export default () => {};

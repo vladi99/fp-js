@@ -1,5 +1,1 @@
-function isInteger() {
-
-}
-
-module.exports = isInteger;
+export default () => {};

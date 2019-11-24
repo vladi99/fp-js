@@ -1,5 +1,1 @@
-function groupBy() {
-
-}
-
-module.exports = groupBy;
+export default () => {};

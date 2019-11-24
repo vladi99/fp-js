@@ -1,5 +1,1 @@
-function negate(num) {
-  return -num;
-}
-
-module.exports = negate;
+export default (num) => -num;

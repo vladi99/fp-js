@@ -1,5 +1,1 @@
-function postwalk() {
-
-}
-
-module.exports = postwalk;
+export default () => {};

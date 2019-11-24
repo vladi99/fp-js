@@ -1,5 +1,1 @@
-function clist() {
-  return [...arguments];
-}
-
-module.exports = clist;
+export default (...args) => args;

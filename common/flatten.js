@@ -1,5 +1,1 @@
-function flatten() {
-
-}
-
-module.exports = flatten;
+export default () => { };

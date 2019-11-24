@@ -1,5 +1,1 @@
-function add() {
-  return [...arguments].reduce((acc, el) => acc + el);
-}
-
-module.exports = add;
+export default (...nums) => nums.reduce((acc, el) => acc + el);

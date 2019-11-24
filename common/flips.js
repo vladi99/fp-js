@@ -1,5 +1,1 @@
-function flips() {
-  return () => {};
-}
-
-module.exports = flips;
+export default (func) => (...args) => func(...args.slice().reverse());

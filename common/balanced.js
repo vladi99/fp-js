@@ -1,5 +1,1 @@
-function balanced() {
-
-}
-
-module.exports = balanced;
+export default () => {};

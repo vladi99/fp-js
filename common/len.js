@@ -1,5 +1,1 @@
-function len() {
-
-}
-
-module.exports = len;
+export default () => {};

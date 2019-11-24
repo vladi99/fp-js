@@ -1,5 +1,1 @@
-function isList() {
-
-}
-
-module.exports = isList;
+export default () => {};

@@ -1,5 +1,1 @@
-function range() {
-
-}
-
-module.exports = range;
+export default () => {};

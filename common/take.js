@@ -1,5 +1,1 @@
-function take() {
-
-}
-
-module.exports = take;
+export default () => {};

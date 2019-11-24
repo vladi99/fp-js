@@ -1,5 +1,1 @@
-function update() {
-
-}
-
-module.exports = update;
+export default () => {};

@@ -1,5 +1,1 @@
-function treeSeq() {
-
-}
-
-module.exports = treeSeq;
+export default () => {};

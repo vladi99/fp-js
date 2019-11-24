@@ -1,5 +1,1 @@
-function mergeWith() {
-
-}
-
-module.exports = mergeWith;
+export default () => {};

@@ -1,5 +1,1 @@
-function identity() {
-
-}
-
-module.exports = identity;
+export default () => {};

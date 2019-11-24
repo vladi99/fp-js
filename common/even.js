@@ -1,5 +1,1 @@
-function even() {
-
-}
-
-module.exports = even;
+export default () => {};

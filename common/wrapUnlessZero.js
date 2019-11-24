@@ -1,5 +1,1 @@
-function wrapUnlessZero() {
-
-}
-
-module.exports = wrapUnlessZero;
+export default () => {};

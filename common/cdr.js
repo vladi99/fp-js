@@ -1,5 +1,1 @@
-function cdr(arr) {
-  return arr.slice(1);
-}
-
-module.exports = cdr;
+export default arr => arr.slice(1);

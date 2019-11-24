@@ -1,5 +1,1 @@
-function positive() {
-
-}
-
-module.exports = positive;
+export default () => {};

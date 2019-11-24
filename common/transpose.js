@@ -1,7 +1,3 @@
-const zip = require('./zip')
+import zip from './zip.js';
 
-function transpose(arr) {
-  return zip(...arr);
-}
-
-module.exports = transpose;
+export default arr => zip(...arr);

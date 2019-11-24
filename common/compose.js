@@ -1,5 +1,1 @@
-function compose(...functions) {
-  return functions.reduceRight((acc, func) => (...args) => func(acc(...args)));
-}
-
-module.exports = compose;
+export default (...functions) => functions.reduceRight((acc, func) => (...args) => func(acc(...args)));

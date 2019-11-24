@@ -1,5 +1,1 @@
-function everyPred() {
- return () => {};
-}
-
-module.exports = everyPred;
+export default () => () => {};

@@ -1,1 +1,1 @@
-export default () => {};
+export default num => [...Array(num).keys()];

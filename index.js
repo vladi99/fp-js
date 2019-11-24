@@ -10,7 +10,6 @@ const negate = require('./common/negate');
 const zip = require('./common/zip');
 const zipmap = require('./common/zipmap');
 const zipwith = require('./common/zipwith');
-const cons = require('./common/cons');
 const car = require('./common/car');
 const cdr = require('./common/cdr');
 const partial = require('./common/partial');
@@ -61,8 +60,8 @@ equal(zipmap([1, 2, 3], [4, 5, 6]), { 1: 4, 2: 5, 3: 6 });
 equal(zipwith(add, [1, 2, 3], [4, 5, 6]), [5, 7, 9]);
 equal(zipwith(add, [1, 2, 3], [4, 5, 6], [1, 1, 1]), [6, 8, 10]);
 
-equal(car(cons(3, 4)), 3);
-equal(cdr(cons(3, 4)), 4);
+equal(car(clist(3, 4)), 3);
+equal(cdr(clist(3, 4)), [4]);
 
 equal(partial(add, 1, 2)(3, 4), 10);
 equal(partial(clist, 1, 2)(3, 4), [1, 2, 3, 4]);

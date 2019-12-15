@@ -1,1 +1,5 @@
-export default (num) => -num;
+function negate(num) {
+  return -num;
+}
+
+export default negate;

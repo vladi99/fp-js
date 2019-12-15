@@ -1,1 +1,4 @@
-export default (_) => {};
+function groupBy() {
+}
+
+export default groupBy;

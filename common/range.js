@@ -1,1 +1,5 @@
-export default num => [...Array(num).keys()];
+export default range;
+
+function range(num) {
+  return [...Array(num).keys()];
+}

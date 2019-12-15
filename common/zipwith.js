@@ -1,1 +1,10 @@
-export default (func, ...arrays) => arrays[0].map((_, index) => func(...arrays.map(arr => arr[index])));
+import zip from './zip.js';
+
+function zipwith(fn, ...arrays) {
+  return zip(...arrays).map(function applyFn(group) {
+    return fn(...group);
+  });
+}
+
+export default zipwith;
+

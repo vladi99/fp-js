@@ -1,5 +1,5 @@
-// export default function flatten(arr) {
-//   return arr.reduce((acc, curr) => acc.concat(Array.isArray(curr) ? flatten(curr) : curr), [])
-// };
+function flatten(arr) {
+  return arr.flat(Infinity);
+}
 
-export default arr => arr.flat(Infinity);
+export default flatten;

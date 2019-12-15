@@ -1,1 +1,4 @@
-export default (_) => {};
+function wrapUnlessZero() {
+}
+
+export default wrapUnlessZero;

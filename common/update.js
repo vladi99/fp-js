@@ -1,1 +1,4 @@
-export default (_) => {};
+function update() {
+}
+
+export default update;

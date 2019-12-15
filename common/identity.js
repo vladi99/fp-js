@@ -1,1 +1,5 @@
-export default (_) => {};
+function identity(x) {
+  return x;
+}
+
+export default identity;

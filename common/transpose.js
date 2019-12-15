@@ -1,3 +1,8 @@
 import zip from './zip.js';
 
-export default arr => zip(...arr);
+function transpose(arr) {
+  return zip(...arr);
+}
+
+export default transpose;
+

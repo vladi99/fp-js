@@ -1,1 +1,7 @@
-export default (...nums) => nums.reduce((acc, el) => acc - el);
+import difference from './difference.js';
+
+function sub(...nums) {
+  return nums.reduce(difference);
+}
+
+export default sub;

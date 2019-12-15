@@ -1,1 +1,5 @@
-export default (func, ...args) => func.bind(null, ...args);
+function partial(fn, ...args) {
+  return fn.bind(null, ...args);
+}
+
+export default partial;

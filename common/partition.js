@@ -1,1 +1,4 @@
-export default (_) => {};
+function partition() {
+}
+
+export default partition;

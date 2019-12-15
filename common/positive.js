@@ -1,1 +1,5 @@
-export default num => num > 0;
+function positive(num) {
+  return num > 0;
+}
+
+export default positive;

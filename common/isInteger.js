@@ -1,1 +1,4 @@
-export default (_) => {};
+function isInteger() {
+}
+
+export default isInteger;

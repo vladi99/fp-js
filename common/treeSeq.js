@@ -1,1 +1,4 @@
-export default (_) => {};
+function treeSeq() {
+}
+
+export default treeSeq;

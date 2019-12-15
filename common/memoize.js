@@ -1,1 +1,7 @@
-export default (_) => (_) => {};
+function memoize() {
+  return function memoized() {
+
+  }
+}
+
+export default memoize;

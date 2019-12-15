@@ -1,1 +1,7 @@
-export default (...args) => args;
+function clist(...args) {
+  return args;
+}
+
+export default clist;
+
+

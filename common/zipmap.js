@@ -1,1 +1,9 @@
-export default (...arrays) => arrays[0].reduce((accObject, key, index) => ({...accObject, [key]: arrays[1][index]}), {});
+function zipmap(firstArr, secondArr) {
+  return firstArr.reduce(function reducer(accObject, key, index) {
+    // eslint-disable-next-line
+    accObject[key] = secondArr[index];
+    return accObject;
+  }, {});
+}
+
+export default zipmap;

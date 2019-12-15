@@ -1,1 +1,4 @@
-export default (_) => {};
+function postwalk() {
+}
+
+export default postwalk;

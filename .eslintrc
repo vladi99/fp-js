@@ -7,8 +7,12 @@
     "functional"
   ],
   "extends": [
+    "plugin:@getify/proper-arrows/getify-says",
     "plugin:functional/recommended"
   ],
+  "rules": {
+    "func-names": ["error", "always"]
+  },
   "overrides": [
     {
       "files": ["tests/**/*.js"],

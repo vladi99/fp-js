@@ -1,1 +1,4 @@
-export default (_) => {};
+function prewalk() {
+}
+
+export default prewalk;

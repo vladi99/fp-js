@@ -1,1 +1,4 @@
-export default (_) => {};
+function updateIn() {
+}
+
+export default updateIn;

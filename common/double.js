@@ -1,1 +1,5 @@
-export default num => num * 2;
+function double(num) {
+  return num * 2;
+}
+
+export default double;

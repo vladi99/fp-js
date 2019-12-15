@@ -1,1 +1,4 @@
-export default (_) => {};
+function balanced() {
+}
+
+export default balanced;

@@ -1,1 +1,4 @@
-export default (_) => {};
+function mergeWith() {
+}
+
+export default mergeWith;

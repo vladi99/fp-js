@@ -1,3 +1,4 @@
 # Links:
 
-https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266
+- https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266
+- https://github.com/getify/Functional-Light-JS

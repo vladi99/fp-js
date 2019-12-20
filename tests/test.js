@@ -1,46 +1,50 @@
-import equal from './helpers/equal.js';
+import sms from 'source-map-support';
+sms.install({ environment: 'node' });
+process.on('unhandledRejection', console.log);
 
-import clist from '../common/clist.js';
-import add from '../common/add.js';
-import sub from '../common/sub.js';
-import compose from '../common/compose.js';
-import double from '../common/double.js';
-import negate from '../common/negate.js';
-import zip from '../common/zip.js';
-import zipmap from '../common/zipmap.js';
-import zipwith from '../common/zipwith.js';
-import car from '../common/car.js';
-import cdr from '../common/cdr.js';
-import partial from '../common/partial.js';
-import transpose from '../common/transpose.js';
-import flip from '../common/flip.js';
-import flips from '../common/flips.js';
-import take from '../common/take.js';
-import range from '../common/range.js';
-import drop from '../common/drop.js';
-import flatten from '../common/flatten.js';
-import interleave from '../common/interleave.js';
-import everyPred from '../common/everyPred.js';
-import positive from '../common/positive.js';
-import even from '../common/even.js';
-import frequencies from '../common/frequencies.js';
-import partition from '../common/partition.js';
-import mergeWith from '../common/mergeWith.js';
-import treeSeq from '../common/treeSeq.js';
-import isList from '../common/isList.js';
-import memoize from '../common/memoize.js';
-import identity from '../common/identity.js';
-import isInteger from '../common/isInteger.js';
-import groupBy from '../common/groupBy.js';
-import len from '../common/len.js';
-import update from '../common/update.js';
-import updateIn from '../common/updateIn.js';
-import balanced from '../common/balanced.js';
-import postwalk from '../common/postwalk.js';
-import prewalk from '../common/prewalk.js';
-import wrapUnlessZero from '../common/wrapUnlessZero.js';
+import equal from './helpers/equal';
 
-export default () => {
+import clist from '../common/clist';
+import add from '../common/add';
+import sub from '../common/sub';
+import compose from '../common/compose';
+import double from '../common/double';
+import negate from '../common/negate';
+import zip from '../common/zip';
+import zipmap from '../common/zipmap';
+import zipwith from '../common/zipwith';
+import first from '../common/first';
+import tail from '../common/tail';
+import partial from '../common/partial';
+import transpose from '../common/transpose';
+import flip from '../common/flip';
+import flips from '../common/flips';
+import take from '../common/take';
+import range from '../common/range';
+import drop from '../common/drop';
+import flatten from '../common/flatten';
+import interleave from '../common/interleave';
+import everyPred from '../common/everyPred';
+import positive from '../common/positive';
+import even from '../common/even';
+import frequencies from '../common/frequencies';
+import partition from '../common/partition';
+import mergeWith from '../common/mergeWith';
+import treeSeq from '../common/treeSeq';
+import isList from '../common/isList';
+import memoize from '../common/memoize';
+import identity from '../common/identity';
+import isInteger from '../common/isInteger';
+import groupBy from '../common/groupBy';
+import len from '../common/len';
+import update from '../common/update';
+import updateIn from '../common/updateIn';
+import balanced from '../common/balanced';
+import postwalk from '../common/postwalk';
+import prewalk from '../common/prewalk';
+import wrapUnlessZero from '../common/wrapUnlessZero';
+
+function test() {
   equal(clist(1, 2, 3), [1, 2, 3]);
 
   equal(add(1, 2, 3), 6);
@@ -60,8 +64,8 @@ export default () => {
   equal(zipwith(add, [1, 2, 3], [4, 5, 6]), [5, 7, 9]);
   equal(zipwith(add, [1, 2, 3], [4, 5, 6], [1, 1, 1]), [6, 8, 10]);
 
-  equal(car(clist(3, 4)), 3);
-  equal(cdr(clist(3, 4)), [4]);
+  equal(first(clist(3, 4)), 3);
+  equal(tail(clist(3, 4)), [4]);
 
   equal(partial(add, 1, 2)(3, 4), 10);
   equal(partial(clist, 1, 2)(3, 4), [1, 2, 3, 4]);
@@ -122,3 +126,4 @@ export default () => {
   equal(prewalk(wrapUnlessZero, [1, [2, [3]]]), [[0], [[[0]], [[[[0]]]]]]);
 }
 
+export default test

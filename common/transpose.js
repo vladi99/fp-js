@@ -1,4 +1,4 @@
-import zip from './zip.js';
+import zip from './zip';
 
 function transpose(arr) {
   return zip(...arr);

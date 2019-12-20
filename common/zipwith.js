@@ -1,4 +1,4 @@
-import zip from './zip.js';
+import zip from './zip';
 
 function zipwith(fn, ...arrays) {
   return zip(...arrays).map(function applyFn(group) {

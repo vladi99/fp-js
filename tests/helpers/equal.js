@@ -1,6 +1,8 @@
-import { strict as assert } from 'assert'
+import { strict as assert } from 'assert';
 
-export default (actual, expected) => {
+function equal(actual, expected) {
   assert.deepEqual(actual, expected);
   console.log('\x1b[32m%s\x1b[0m', 'Pass');
 }
+
+export default equal

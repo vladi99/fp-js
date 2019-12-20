@@ -1,4 +1,4 @@
-import sum from './sum.js';
+import sum from './sum';
 
 function add(...nums) {
   return nums.reduce(sum);

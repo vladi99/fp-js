@@ -1,6 +1,7 @@
 function flips(func) {
   return function reversedArgs(...args) {
-    return func(...[...args].reverse());
+    // eslint-disable-next-line functional/immutable-data
+    return func(...args.reverse());
   }
 }
 

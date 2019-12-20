@@ -1,5 +1,7 @@
-function partial(fn, ...args) {
-  return fn.bind(null, ...args);
+function partial(fn, ...presetArgs) {
+  return function partiallyApplied(...laterArgs) {
+    return fn(...presetArgs, ...laterArgs);
+  }
 }
 
 export default partial;

@@ -1,7 +1,3 @@
-import sms from 'source-map-support';
-sms.install({ environment: 'node' });
-process.on('unhandledRejection', console.log);
-
 import equal from './helpers/equal';
 
 import clist from '../common/clist';
@@ -43,6 +39,7 @@ import balanced from '../common/balanced';
 import postwalk from '../common/postwalk';
 import prewalk from '../common/prewalk';
 import wrapUnlessZero from '../common/wrapUnlessZero';
+import curry from '../common/curry'
 
 function test() {
   equal(clist(1, 2, 3), [1, 2, 3]);
@@ -70,6 +67,8 @@ function test() {
   equal(partial(add, 1, 2)(3, 4), 10);
   equal(partial(clist, 1, 2)(3, 4), [1, 2, 3, 4]);
   equal(partial(sub, 10)(1, 2), 7);
+
+  equal(curry(add, 4)(1)(2)(3)(4), 10);
 
   equal(transpose([[1, 2, 3], [4, 5, 6]]), [[1, 4], [2, 5], [3, 6]]);
 

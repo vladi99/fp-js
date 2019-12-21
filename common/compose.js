@@ -7,4 +7,3 @@ function compose(...fns) {
 }
 
 export default compose;
-

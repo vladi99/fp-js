@@ -1,14 +1,14 @@
 {
   "type": "module",
   "license": "MIT",
-  "repository": "https://github.com/vladi99/functional-programming-exercises",
+  "repository": "https://github.com/vladi99/fp-js",
   "scripts": {
     "start": "node --experimental-modules --es-module-specifier-resolution=node index.js",
     "lint": "node_modules/eslint/bin/eslint.js .",
     "test": "node --experimental-modules --es-module-specifier-resolution=node tests/index.js"
   },
   "engines": {
-    "node": "12.13.1"
+    "node": "13.5.0"
   },
   "devDependencies": {
     "eslint": "^6.7.0",

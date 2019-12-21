@@ -46,6 +46,7 @@ import difference from '../common/difference'
 import spreadArgProps from '../common/spreadArgProps'
 import curryProps from '../common/curryProps'
 import partialRight from '../common/partialRight'
+import pipe from '../common/pipe'
 
 function test() {
   equal(clist(1, 2, 3), [1, 2, 3]);
@@ -58,6 +59,9 @@ function test() {
 
   equal(compose(negate, double, add)(1, 2, 3), -12);
   equal(compose(clist, double, sub)(1, 2, 3), [-8]);
+
+  equal(pipe(add, double, negate)(1, 2, 3), -12);
+  equal(pipe(sub, double, clist)(1, 2, 3), [-8]);
 
   equal(zip([1, 2, 3], [4, 5, 6]), [[1, 4], [2, 5], [3, 6]]);
   equal(zip([1, 2, 3], [4, 5, 6], [7, 8, 9]), [[1, 4, 7], [2, 5, 8], [3, 6, 9]]);
@@ -73,8 +77,12 @@ function test() {
   equal(partial(add, 1, 2)(3, 4), 10);
   equal(partial(clist, 1, 2)(3, 4), [1, 2, 3, 4]);
   equal(partial(sub, 10)(1, 2), 7);
+  equal(partial(pipe, add, double)(negate)(1, 2, 3), -12);
+  equal(partial(pipe, add, double)(clist)(1, 2, 3), [12]);
+
   equal(partialRight(compose, double, add)(negate)(1, 2, 3), -12);
   equal(partialRight(compose, double, add)(clist)(1, 2, 3), [12]);
+
   equal(partialProps(spreadArgProps(difference), { subtrahend: 3 })({ minuend: 10 }), 7);
 
   equal(curry(add, 4)(1)(2)(3)(4), 10);

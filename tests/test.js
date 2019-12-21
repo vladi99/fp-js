@@ -44,6 +44,7 @@ import looseCurry from '../common/looseCurry'
 import partialProps from '../common/partialProps'
 import difference from '../common/difference'
 import spreadArgProps from '../common/spreadArgProps'
+import curryProps from '../common/curryProps'
 
 function test() {
   equal(clist(1, 2, 3), [1, 2, 3]);
@@ -76,7 +77,7 @@ function test() {
 
   equal(curry(add, 4)(1)(2)(3)(4), 10);
   equal(looseCurry(add, 5)(1)(2, 3)(4, 5), 15);
-  // TODO: add curry props
+  equal(curryProps(spreadArgProps(difference), 2)({ subtrahend: 3 })({ minuend: 10 }), 7);
 
   equal(transpose([[1, 2, 3], [4, 5, 6]]), [[1, 4], [2, 5], [3, 6]]);
 

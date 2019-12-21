@@ -1,5 +1,5 @@
-function difference(a, b) {
-  return a - b;
+function difference(minuend, subtrahend) {
+  return minuend - subtrahend;
 }
 
 export default difference;

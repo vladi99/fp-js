@@ -1,10 +1,8 @@
-// TODO: make function tail call optimized or change to iterative
-function interleave([ x, ...xs ], ...rest) {
-  return x === undefined
-    ? rest.length === 0
-      ? [] // base: no x, no rest
-      : interleave (...rest) // inductive: no x, some rest
-    : [x, ...interleave(...rest, xs)]
+import flatten from './flatten';
+import zip from './zip';
+
+function interleave(...arr) {
+  return flatten(zip(...arr));
 }
 
 export default interleave;
